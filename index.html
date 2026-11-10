@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Yo'l Qurilishi va Infratuzilma Standartlari</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .road-layer {
+            transition: all 0.3s ease;
+        }
+        .road-layer:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-slate-900">
+
+    <!-- Header Section -->
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="p-2.5 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-500">
+                    <i data-lucide="construction" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-white tracking-wide">RoadMaster Pro</h1>
+                    <p class="text-xs text-slate-400">Yo'l qurilishi va infratuzilma standarti</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#comparison" class="hover:text-amber-400 transition-colors">Taqqoslash</a>
+                <a href="#ideal-steps" class="hover:text-amber-400 transition-colors">Ideal Bosqichlar</a>
+                <a href="#economy" class="hover:text-amber-400 transition-colors">Tejamkorlik</a>
+                <a href="#simulator" class="hover:text-amber-400 transition-colors">Simulyatsiya</a>
+                <a href="#register" class="hover:text-amber-400 transition-colors">Ariza Yuborish</a>
+            </nav>
+            <a href="#register" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold rounded-xl transition-all shadow-lg shadow-amber-500/20 text-sm">
+                Taklif Yuborish
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-24 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 border border-amber-500/20 text-amber-400 mb-6">
+                    <i data-lucide="piggy-bank" class="w-4 h-4"></i> Budjetni Tejovchi Innovatsion Yondashuv
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                    Arzon, Sifatli va <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-emerald-400">Ideal Yo'llar</span> Infratuzilmasi
+                </h1>
+                <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+                    Qayta qazish va takroriy xarajatlarga chek qo'yamiz. Har bir viloyat hamda qishloq uchun to'g'ri rejalashtirish orqali davlat va jamoatchilik mablag'larini 40% gacha tejang!
+                </p>
+                <div class="mt-10 flex flex-wrap justify-center gap-4">
+                    <a href="#register" class="px-7 py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i> O'z Qishlog'ingizni Ro'yxatdan O'tkazing
+                    </a>
+                    <a href="#economy" class="px-7 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl border border-slate-700 transition-all flex items-center gap-2">
+                        <i data-lucide="trending-down" class="w-5 h-5"></i> Tejamkorlik Kalkulyatori
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Gallery / Image Section -->
+        <section class="py-12 bg-slate-950 border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="relative group overflow-hidden rounded-2xl border border-slate-800 h-64">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?auto=format&fit=crop&w=800&q=80" alt="Yer osti muhandislik ishlari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x500/1e293b/94a3b8?text=Muhandislik+Ishlari'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                            <span class="text-xs text-amber-400 font-semibold">1-Bosqich</span>
+                            <h3 class="text-lg font-bold text-white">Yer Osti Kommunikatsiyasi</h3>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl border border-slate-800 h-64">
+                        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" alt="Yo'l zichlash va qurish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x500/1e293b/94a3b8?text=Zichlash+va+Poydevor'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                            <span class="text-xs text-amber-400 font-semibold">2-Bosqich</span>
+                            <h3 class="text-lg font-bold text-white">Mustahkam Shag'al Poydevor</h3>
+                        </div>
+                    </div>
+                    <div class="relative group overflow-hidden rounded-2xl border border-slate-800 h-64">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Ideal Asfalt va belgilash" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/800x500/1e293b/94a3b8?text=Ideal+Yo\'l'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
+                            <span class="text-xs text-emerald-400 font-semibold">Yakuniy Natija</span>
+                            <h3 class="text-lg font-bold text-white">Uzoq Yillik Sifatli Yo'l</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cost Reduction & Economy Section -->
+        <section id="economy" class="py-16 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">Kam Xarajat evaziga Maksimal Sifat</h2>
+                    <p class="text-slate-400 mt-2">Mablag'larni to'g'ri yo'naltirish va budjetni tejash mexanizmlari</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-4">
+                            <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">40% Xarajat Tejalishi</h3>
+                        <p class="text-xs text-slate-400 mt-2">Asfaltni qayta-qayta buzib qazish va yamoqlash ishlariga ketadigan ortiqcha budjet batamom qisqaradi.</p>
+                    </div>
+
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-4">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Vaqt Tejamkorligi</h3>
+                        <p class="text-xs text-slate-400 mt-2">Kommunikatsiya tashkilotlari bir vaqtning o'zida ishlagani sababli loyiha muddati 2 barobar tezlashadi.</p>
+                    </div>
+
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-4">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">15+ Yil Kafolat</h3>
+                        <p class="text-xs text-slate-400 mt-2">Poydevor ostida suv quvurlari oqmasligi va mustahkam bosim tufayli yo'l uzoq yillar o'tirmaydi va yorilmaydi.</p>
+                    </div>
+                </div>
+
+                <!-- Calculator Box -->
+                <div class="bg-slate-950 p-6 md:p-8 rounded-3xl border border-slate-800 max-w-3xl mx-auto">
+                    <h3 class="text-xl font-bold text-white text-center mb-6 flex items-center justify-center gap-2">
+                        <i data-lucide="calculator" class="w-5 h-5 text-amber-500"></i> Hududiy Tejamkorlik Hisoblagichi
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Yo'l uzunligi (km):</label>
+                            <input type="number" id="calc-km" value="5" min="1" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Amaldagi rejasiz qazishlar soni:</label>
+                            <input type="number" id="calc-digs" value="3" min="0" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 text-center">
+                        <p class="text-xs text-slate-400">Rejalashtirish orqali tejab qolinadigan taxminiy mablag':</p>
+                        <p id="calc-result" class="text-2xl font-extrabold text-emerald-400 mt-1">150,000,000 UZS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="py-16 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">Ikki xil yondashuv: Taqqoslang</h2>
+                    <p class="text-slate-400 mt-2">Amaliyotdagi xatolar va biz taklif qilayotgan tizimli ideal model</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Bad Practice -->
+                    <div class="bg-red-950/20 border border-red-900/40 rounded-2xl p-6 relative overflow-hidden">
+                        <div class="absolute -right-6 -top-6 w-24 h-24 bg-red-500/10 rounded-full blur-xl"></div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="flex items-center gap-2 text-red-400 font-bold text-lg">
+                                <i data-lucide="x-circle" class="w-6 h-6"></i> Noto'g'ri Ketma-ketlik (Xato)
+                            </span>
+                            <span class="text-xs bg-red-500/20 text-red-300 px-3 py-1 rounded-full border border-red-500/30">Zararli usul</span>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-red-900/30">
+                                <span class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Shoshilinch Asfaltlash</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Yer osti tarmoqlari holati tekshirilmasdan asfalt yotqiziladi.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-red-900/30">
+                                <span class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">2</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Suv/Gaz quvurining yorilishi va qazish</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Yangi yotqizilgan asfalt qayta kavlab tashlanadi va suv o'tkaziladi.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-red-900/30">
+                                <span class="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Siyqa (Yamoq) Asfalt Yamoqlash</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Qazilgan joy o'nqir-cho'nqir qilib yopiladi va yo'l o'tirib qoladi.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-6 p-4 bg-red-900/20 rounded-xl text-red-300 text-xs flex items-center gap-3 border border-red-800/30">
+                            <i data-lucide="alert-circle" class="w-5 h-5 shrink-0"></i>
+                            Oqibat: Budjet isrof bo'ladi, haydovchilar noqulaylik sezadi, yo'l umri 3-5 barobarga qisqaradi.
+                        </div>
+                    </div>
+
+                    <!-- Good Practice -->
+                    <div class="bg-emerald-950/20 border border-emerald-900/40 rounded-2xl p-6 relative overflow-hidden">
+                        <div class="absolute -right-6 -top-6 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl"></div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="flex items-center gap-2 text-emerald-400 font-bold text-lg">
+                                <i data-lucide="check-circle" class="w-6 h-6"></i> Ideal Ketma-ketlik (To'g'ri)
+                            </span>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30">Standart usul</span>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-emerald-900/30">
+                                <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Integrallashgan Rejalashtirish</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Hamma tashkilotlar (Suv, Gaz, Elektr, Aloqa) yagona xarita asosida kelishadi.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-emerald-900/30">
+                                <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">2</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Barcha Yer Osti Tarmoqlarini Yotqizish</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Trubalar, kabellar, drenaj tizimlari va maxsus tunnel (kolektor)lar tayyorlanadi.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-emerald-900/30">
+                                <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
+                                <div>
+                                    <h4 class="font-semibold text-slate-200 text-sm">Mustahkam Poydevor & Sifatli Asfalt</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Zichlashtirish va ko'p qatlamli asfalt yotqizish runsiz amalga oshiriladi.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-6 p-4 bg-emerald-900/20 rounded-xl text-emerald-300 text-xs flex items-center gap-3 border border-emerald-800/30">
+                            <i data-lucide="sparkles" class="w-5 h-5 shrink-0"></i>
+                            Natija: Yo'l 15-20 yil mobaynida qazilmasdan sifatli xizmat qiladi va budjet tejaladi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ideal Steps Section -->
+        <section id="ideal-steps" class="py-16 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-white">Ideal Yo'l Qurilishining 5 Bosqichi</h2>
+                    <p class="text-slate-400 mt-2">Haqiqiy sifat va mustahkamlikni ta'minlovchi xalqaro standart ketma-ketligi</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <!-- Step 1 -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group relative">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                            <i data-lucide="map" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-500 tracking-wider">01-BOSQICH</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Loyiha & GIS</h3>
+                        <p class="text-xs text-slate-400 mt-2">Geodeziya va yer osti xaritalarini raqamlashtirish. Barcha tashkilotlar kelishuvi.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group relative">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                            <i data-lucide="pipette" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-500 tracking-wider">02-BOSQICH</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Kommunikatsiya</h3>
+                        <p class="text-xs text-slate-400 mt-2">Suv, gaz, elektr, optik tolali aloqa quvurlari va drenaj tizimlarini o'tkazish.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group relative">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-500 tracking-wider">03-BOSQICH</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Poydevor / Zichlash</h3>
+                        <p class="text-xs text-slate-400 mt-2">Qum-shag'al aralashmasini yotqizish, geotukima va bir necha bosqichli zichlashtirish.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group relative">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                            <i data-lucide="disc" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-500 tracking-wider">04-BOSQICH</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Asfalt Yotqizish</h3>
+                        <p class="text-xs text-slate-400 mt-2">Yirik va mayda donador sifatli asfalt qatlamlarini issiqlik texnologiyasi bilan yotqizish.</p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all group relative">
+                        <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 mb-4 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                            <i data-lucide="check-check" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-500 tracking-wider">05-BOSQICH</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Chiziqlar & Belgilar</h3>
+                        <p class="text-xs text-slate-400 mt-2">Termoplastik chiziqlar, svetoforlar va piyodalar infratuzilmasini sozlash.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Simulator Section -->
+        <section id="simulator" class="py-16 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white">Yo'l Qurilishi Simulyatori</h2>
+                    <p class="text-slate-400 mt-2">Bosqichlarni ketma-ket bosing va ideal yo'l qatlamlarini barpo eting</p>
+                </div>
+
+                <div class="bg-slate-950 p-6 md:p-8 rounded-3xl border border-slate-800 shadow-2xl">
+                    <!-- Buttons Control -->
+                    <div class="flex flex-wrap gap-3 justify-center mb-8" id="sim-controls">
+                        <button id="btn-step-1" class="sim-btn px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 flex items-center gap-2 transition-all">
+                            <span class="w-5 h-5 rounded-full bg-slate-700 flex items-center justify-center text-white">1</span> Rejalashtirish
+                        </button>
+                        <button id="btn-step-2" class="sim-btn px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 flex items-center gap-2 transition-all">
+                            <span class="w-5 h-5 rounded-full bg-slate-700 flex items-center justify-center text-white">2</span> Truba & Quvurlar
+                        </button>
+                        <button id="btn-step-3" class="sim-btn px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 flex items-center gap-2 transition-all">
+                            <span class="w-5 h-5 rounded-full bg-slate-700 flex items-center justify-center text-white">3</span> Shag'al Poydevor
+                        </button>
+                        <button id="btn-step-4" class="sim-btn px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 flex items-center gap-2 transition-all">
+                            <span class="w-5 h-5 rounded-full bg-slate-700 flex items-center justify-center text-white">4</span> Asfalt Qatlam
+                        </button>
+                        <button id="btn-reset" class="px-4 py-2.5 bg-red-500/10 hover:bg-red-500/20 text-red-400 text-xs font-semibold rounded-xl border border-red-500/20 flex items-center gap-2 transition-all">
+                            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Qayta boshlash
+                        </button>
+                    </div>
+
+                    <!-- Visual Representation -->
+                    <div class="relative w-full h-64 bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden flex flex-col justify-end p-4 gap-1" id="road-canvas">
+                        <!-- Top Surface / Markings -->
+                        <div id="layer-markings" class="h-6 bg-slate-800 rounded opacity-20 transition-all duration-500 flex items-center justify-around">
+                            <div class="w-12 h-1 bg-amber-400 rounded"></div>
+                            <div class="w-12 h-1 bg-amber-400 rounded"></div>
+                            <div class="w-12 h-1 bg-amber-400 rounded"></div>
+                        </div>
+                        <!-- Asphalt Layer -->
+                        <div id="layer-asphalt" class="h-14 bg-slate-700 rounded opacity-20 transition-all duration-500 flex items-center justify-center text-xs text-slate-400 font-mono">
+                            [ Asfalt Qatlami ]
+                        </div>
+                        <!-- Base Layer -->
+                        <div id="layer-base" class="h-16 bg-amber-900/40 rounded opacity-20 transition-all duration-500 flex items-center justify-center text-xs text-amber-200/60 font-mono">
+                            [ Shag'al va Zichlangan Qum Poydevor ]
+                        </div>
+                        <!-- Utilities Layer -->
+                        <div id="layer-pipes" class="h-20 bg-slate-800/80 rounded opacity-20 transition-all duration-500 flex items-center justify-around px-8 border-t border-slate-700">
+                            <div class="flex items-center gap-2 text-cyan-400 text-xs">
+                                <i data-lucide="droplet" class="w-4 h-4"></i> Suv Quvuri
+                            </div>
+                            <div class="flex items-center gap-2 text-amber-500 text-xs">
+                                <i data-lucide="flame" class="w-4 h-4"></i> Gaz Tarmog'i
+                            </div>
+                            <div class="flex items-center gap-2 text-yellow-400 text-xs">
+                                <i data-lucide="zap" class="w-4 h-4"></i> Elektr Kabellari
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Info Box -->
+                    <div id="sim-status" class="mt-6 p-4 bg-slate-900 rounded-xl text-xs text-slate-300 border border-slate-800">
+                        <span class="text-amber-400 font-bold">Yo'riqnoma:</span> Yuqoridagi tugmalarni tartib bilan bosing (1-bosqichdan boshlab).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration & Report Form Section -->
+        <section id="register" class="py-16 bg-slate-950">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-amber-500 uppercase tracking-widest">Jamoatchilik Nazorati</span>
+                    <h2 class="text-3xl font-bold text-white mt-1">O'z Qishlog'ingiz yoki Viloyatingizni Ro'yxatdan O'tkazing</h2>
+                    <p class="text-slate-400 mt-2 text-sm">Yo'lingizda quvur o'tkazilishi kerakmi? Yoki yangi asfalt rejalashtirilmoqdami? Ma'lumot qoldiring!</p>
+                </div>
+
+                <div class="bg-slate-900 p-6 md:p-10 rounded-3xl border border-slate-800 shadow-2xl relative">
+                    <form id="road-request-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Ismingiz va Familiyangiz</label>
+                                <input type="text" required placeholder="Masalan: Jasur Rahimov" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Telefon raqamingiz</label>
+                                <input type="tel" required placeholder="+998 90 123 45 67" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Viloyatni tanlang</label>
+                                <select required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                                    <option value="">-- Viloyatni tanlang --</option>
+                                    <option value="Toshkent">Toshkent viloyati / shahri</option>
+                                    <option value="Samarqand">Samarqand viloyati</option>
+                                    <option value="Farg'ona">Farg'ona viloyati</option>
+                                    <option value="Andijon">Andijon viloyati</option>
+                                    <option value="Namangan">Namangan viloyati</option>
+                                    <option value="Buxoro">Buxoro viloyati</option>
+                                    <option value="Xorazm">Xorazm viloyati</option>
+                                    <option value="Qashqadaryo">Qashqadaryo viloyati</option>
+                                    <option value="Surxondaryo">Surxondaryo viloyati</option>
+                                    <option value="Navoiy">Navoiy viloyati</option>
+                                    <option value="Jizzax">Jizzax viloyati</option>
+                                    <option value="Sirdaryo">Sirdaryo viloyati</option>
+                                    <option value="Qoraqalpog'iston">Qoraqalpog'iston R.</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Tuman / Qishloq / MFY nomi</label>
+                                <input type="text" required placeholder="Masalan: Yangiaryk tuman, Bog'ot MFY" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Joriy Muammo yoki Yo'l Holati</label>
+                            <select required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="rejasiz">Asfalt qilindi, lekin quvur o'tkazilmagan (xavf bor)</option>
+                                <option value="vodoprovod">Vodoprovod/Gaz yo'q, yangi yotqizilishi kerak</option>
+                                <option value="ta'mir">Yo'l o'nqir-cho'nqir, ideal ketma-ketlikda ta'mirlash kerak</option>
+                                <option value="boshqa">Boshqa taklif</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Batafsil Izoh yoki Taklifingiz</label>
+                            <textarea rows="3" placeholder="Ko'changgizdagi yo'l holati bo'yicha taklif bildiring..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-amber-500/20 text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i> Ariza va Taklifni Yuborish
+                        </button>
+                    </form>
+
+                    <!-- Alert message box -->
+                    <div id="form-alert" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs text-center">
+                        Rahmat! Sizning arizangiz va taklifingiz qabul qilindi. Tez orada mas'ul muhandislar hudud rejasi bo'yicha bog'lanishadi.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="py-16 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white">Yo'l Sifatini Yaxshilash Bo'yicha Tavsiyalar</h2>
+                    <p class="text-slate-400 mt-2">Muammoni tubdan hal etish uchun tizimli yechimlar</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="database" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Yagona GIS Geoportali</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Barcha yer osti kommunikatsiyalarining raqamli xaritasini yaratish va uni ochiq reyestrga kiritish. Bu bilan noqonuniy yoki rejasiz qazishlarga chek qo'yiladi.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Kolektor Tizimi (Tunnellar)</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Yangi yo me'moriy loyihalarda barcha quvurlarni maxsus o'tish teshiklariga (tunnel) joylashtirish. Kelajakda ta'birlash uchun yo'l kavlanmaydi.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="file-badge" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Kafolat va Sertifikatlash</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Pudrat tashkilotlariga kamida 5-10 yillik kafolat majburiyatini yuklash. Agar muddatdan oldin yo'l buzilsa, qayta tiklash puddatchi hisobidan bo'ladi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-slate-500">© 2026 RoadMaster Pro — Shaffof va Tejamkor Yo'l Qurilishi Tashabbusi.</p>
+            <div class="flex items-center space-x-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Xalqaro Standartlar</span>
+                <span class="flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Kam Xarajat, Yuqori Sifat</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide ikonkalarini faollashtirish
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+
+        // Simulyator mantiqiy kodi
+        let currentStep = 0;
+
+        function buildStep(step) {
+            const infoBox = document.getElementById('sim-status');
+            const layerPipes = document.getElementById('layer-pipes');
+            const layerBase = document.getElementById('layer-base');
+            const layerAsphalt = document.getElementById('layer-asphalt');
+            const layerMarkings = document.getElementById('layer-markings');
+
+            if (!infoBox || !layerPipes || !layerBase || !layerAsphalt || !layerMarkings) return;
+
+            if (step === 1) {
+                currentStep = 1;
+                infoBox.innerHTML = '<span class="text-emerald-400 font-bold">1-Bosqich Bajarildi:</span> Geodeziya va loyihalash yakunlandi. Raqamli xarita tayyor.';
+                layerPipes.classList.remove('opacity-20');
+                layerPipes.classList.add('opacity-40');
+            } else if (step === 2) {
+                if (currentStep < 1) {
+                    infoBox.innerHTML = '<span class="text-red-400 font-bold">Xatolik:</span> Avval 1-bosqich (Rejalashtirish)ni bajaring!';
+                    return;
+                }
+                currentStep = 2;
+                infoBox.innerHTML = '<span class="text-emerald-400 font-bold">2-Bosqich Bajarildi:</span> Barcha yer osti quvurlari (suv, gaz, elektr) yotqizildi va sinovdan o\'tkazildi.';
+                layerPipes.classList.remove('opacity-40');
+                layerPipes.classList.add('opacity-100', 'bg-slate-800');
+            } else if (step === 3) {
+                if (currentStep < 2) {
+                    infoBox.innerHTML = '<span class="text-red-400 font-bold">Xatolik:</span> Avval quvur va kommunikatsiyalarni yotqizing!';
+                    return;
+                }
+                currentStep = 3;
+                infoBox.innerHTML = '<span class="text-emerald-400 font-bold">3-Bosqich Bajarildi:</span> Shag\'al va qum poydevori yotqizildi hamda vibratsiyali zichlashtirildi.';
+                layerBase.classList.remove('opacity-20');
+                layerBase.classList.add('opacity-100', 'bg-amber-900/80');
+            } else if (step === 4) {
+                if (currentStep < 3) {
+                    infoBox.innerHTML = '<span class="text-red-400 font-bold">Xatolik:</span> Poydevorsiz asfalt yotqizib bo\'lmaydi!';
+                    return;
+                }
+                currentStep = 4;
+                infoBox.innerHTML = '<span class="text-emerald-400 font-bold">Muvaffaqiyatli!</span> Sifatli ko\'p qatlamli asfalt va yo\'l chiziqlari yotqizildi. Bu yo\'l yillar davomida buzilmaydi va qayta kavlanmaydi!';
+                layerAsphalt.classList.remove('opacity-20');
+                layerAsphalt.classList.add('opacity-100', 'bg-slate-950');
+                layerMarkings.classList.remove('opacity-20');
+                layerMarkings.classList.add('opacity-100', 'bg-slate-900');
+            }
+        }
+
+        function resetSim() {
+            currentStep = 0;
+            const infoBox = document.getElementById('sim-status');
+            if (infoBox) {
+                infoBox.innerHTML = '<span class="text-amber-400 font-bold">Yo\'riqnoma:</span> Yuqoridagi tugmalarni tartib bilan bosing (1-bosqichdan boshlab).';
+            }
+            
+            const layers = ['layer-pipes', 'layer-base', 'layer-asphalt', 'layer-markings'];
+            layers.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.className = el.className.replace(/opacity-100|opacity-40/g, 'opacity-20');
+                }
+            });
+        }
+
+        // Calculator Logic
+        function updateCalculator() {
+            const km = parseFloat(document.getElementById('calc-km').value) || 0;
+            const digs = parseFloat(document.getElementById('calc-digs').value) || 0;
+            const savedAmount = (km * 20000000) + (digs * 15000000);
+            const formatted = new Intl.NumberFormat('uz-UZ').format(savedAmount) + ' UZS';
+            document.getElementById('calc-result').innerText = formatted;
+        }
+
+        // Event listener'larni xavfsiz biriktirish
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn1 = document.getElementById('btn-step-1');
+            const btn2 = document.getElementById('btn-step-2');
+            const btn3 = document.getElementById('btn-step-3');
+            const btn4 = document.getElementById('btn-step-4');
+            const btnReset = document.getElementById('btn-reset');
+
+            if (btn1) btn1.addEventListener('click', () => buildStep(1));
+            if (btn2) btn2.addEventListener('click', () => buildStep(2));
+            if (btn3) btn3.addEventListener('click', () => buildStep(3));
+            if (btn4) btn4.addEventListener('click', () => buildStep(4));
+            if (btnReset) btnReset.addEventListener('click', resetSim);
+
+            // Calculator events
+            const inputKm = document.getElementById('calc-km');
+            const inputDigs = document.getElementById('calc-digs');
+            if (inputKm) inputKm.addEventListener('input', updateCalculator);
+            if (inputDigs) inputDigs.addEventListener('input', updateCalculator);
+
+            // Form Submit Event
+            const form = document.getElementById('road-request-form');
+            const alertBox = document.getElementById('form-alert');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    if (alertBox) {
+                        alertBox.classList.remove('hidden');
+                        form.reset();
+                        setTimeout(() => {
+                            alertBox.classList.add('hidden');
+                        }, 6000);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
